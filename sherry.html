@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sherry Chen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f3f7f5;
+  --ink:#101915;
+  --ink-soft:#55675f;
+  --jade:#0e5c4c;
+  --jade-bright:#159c7d;
+  --ice:#dde8e3;
+  --card:#ffffff;
+  --font-display:"Space Grotesk",system-ui,sans-serif;
+  --font-body:"Inter",system-ui,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse 1200px 700px at 50% -10%,#e7f1ec 0%,var(--paper) 55%);color:var(--ink);font:16px var(--font-body)}
+main{width:min(calc(100% - 32px),480px);margin:clamp(20px,7vw,88px) auto;display:grid;gap:12px}
+section{position:relative;min-width:0;background:var(--card);border:1px solid var(--ice);border-radius:16px;padding:clamp(16px,2.6vw,28px);box-shadow:0 1px 2px rgba(16,25,21,.04),0 12px 32px -20px rgba(16,25,21,.18)}
+section::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;border-radius:16px 16px 0 0;background:linear-gradient(90deg,var(--jade),var(--jade-bright))}
+h2{margin:0 0 12px;font:600 clamp(25px,3vw,35px)/1.05 var(--font-display);letter-spacing:-.03em;color:var(--ink)}
+.link-card{display:grid;grid-template-columns:30px minmax(0,1fr) 28px;gap:10px;align-items:center;min-height:54px;padding:9px 0;border-top:1px solid var(--ice);color:inherit;text-decoration:none;font-size:14px;transition:transform .2s ease}
+.link-copy small{display:none}
+.link-copy strong{font-weight:600}
+.link-icon{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:var(--paper);border:1px solid var(--ice);font-size:12px;font-weight:600;color:var(--jade);text-align:center;transition:background .2s ease,border-color .2s ease,color .2s ease}
+.link-arrow{display:grid;place-items:center;width:28px;height:28px;border:1px solid var(--ice);border-radius:50%;color:var(--jade);transition:background .2s ease,border-color .2s ease,color .2s ease,transform .2s ease,box-shadow .2s ease}
+.link-card:hover,.link-card:focus-visible{color:var(--jade);transform:translateX(2px)}
+.link-card:hover .link-icon,.link-card:focus-visible .link-icon{background:var(--jade);border-color:var(--jade);color:#fff}
+.link-card:hover .link-arrow,.link-card:focus-visible .link-arrow{background:linear-gradient(135deg,var(--jade),var(--jade-bright));border-color:var(--jade);color:#fff;box-shadow:0 6px 16px -6px rgba(14,92,76,.5)}
+.link-card:focus-visible{outline:2px solid var(--jade);outline-offset:3px;border-radius:4px}
+.email-address{overflow-wrap:anywhere}
+@media(prefers-reduced-motion:reduce){.link-card{transition:none}.link-card:hover{transform:none}}
+</style>
+</head>
+<body><main>
+<section aria-labelledby="personal"><h2 id="personal">Sherry Chen</h2>
+<a class="link-card" href="https://sherry-shiuanting-chen.github.io/sherry-chen-portfolio/sherry.html" target="_blank" rel="noopener noreferrer"><span class="link-icon">◎</span><span class="link-copy"><strong>Personal website</strong><small>Explore my portfolio</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+<a class="link-card" href="https://www.linkedin.com/in/sherry-chen-334250164" target="_blank" rel="noopener noreferrer"><span class="link-icon link-monogram">in</span><span class="link-copy"><strong>LinkedIn</strong><small>Connect professionally</small></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+<a class="link-card" href="mailto:shiuantingchen@gmail.com"><span class="link-icon">✉</span><span class="link-copy"><strong class="email-address">shiuantingchen@gmail.com</strong></span><span class="link-arrow" aria-hidden="true">↗</span></a>
+<a class="link-card subtle" href="sherry-chen.vcf" download="Sherry-Chen.vcf"><span class="link-icon">＋</span><span class="link-copy"><strong>Save my contact</strong><small>Download a contact card</small></span><span class="link-arrow" aria-hidden="true">↓</span></a>
+</section>
+</main></body></html>
